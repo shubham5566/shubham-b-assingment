@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick';
 
-
+import "./index.css"
 import { Card } from 'react-bootstrap';
 function MyCarousel({land}) {
     const settings = {
@@ -16,7 +16,7 @@ function MyCarousel({land}) {
   return (
     <Slider {...settings} className="slider-container">
          {
-            land.land_media.map((img)=>(<Card.Img src={img.image}   style={{ width: '100%', height: '20rem' }}/>))
+            land.land_media.map((img,index)=>(<Card.Img key={index} src={img.image}   style={{ width: '100%', height: '20rem' }}/>))
          }
 
           

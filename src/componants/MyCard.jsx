@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Badge, Button } from "react-bootstrap";
-import MyCarousel from "../MyCarousel";
+import MyCarousel from "./MyCarousel";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import { FaShare } from "react-icons/fa";
